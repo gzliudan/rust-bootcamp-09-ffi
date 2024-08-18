@@ -1,0 +1,10 @@
+[package]
+authors     = ["Daniel Liu <139250065@qq.com>"]
+description = "algo"
+edition     = "2021"
+license     = "MIT"
+name        = "algo"
+version     = "0.1.0"
+
+[dependencies]
+blake3 = { version = "1" }
