@@ -1,0 +1,20 @@
+[package]
+authors = ["Daniel Liu <139250065@qq.com>"]
+description = "napi example"
+edition = "2021"
+license = "MIT"
+name = "node-binding"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+algo = { workspace = true }
+napi = { version = "2", default-features = false, features = ["full"] }
+napi-derive = "2"
+
+[build-dependencies]
+napi-build = "2"
